@@ -7,11 +7,11 @@ const Navbar = () => {
 
 
   return (
-      <nav className='sticky top-3 z-10 mx-16 bg-gray-200 dark:bg-slate-800 backdrop-filter backdrop-blur-lg bg-opacity-30'>
+      <nav className='sticky rounded top-3 z-10 mx-16 bg-gray-200 backdrop-filter backdrop-blur-lg bg-opacity-30  border-b border-gray-200'>
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <span className="text-2xl text-gray-900 dark:text-gray-100 font-semibold">Logo</span>
-            <div className="flex space-x-4 text-gray-900 dark:text-gray-100">
+            <span className="text-2xl text-gray-900 font-semibold">Logo</span>
+            <div className="flex space-x-4 text-gray-900">
               <a href="#">Dashboard</a>
               <a href="#">About</a>
               <a href="#">Projects</a>
