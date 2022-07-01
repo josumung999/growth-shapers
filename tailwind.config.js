@@ -5,12 +5,13 @@ module.exports = {
       "./pages/**/*.{js,ts,jsx,tsx}",
       "./components/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'media',
   theme: {
       extend: {},
       fontFamily: {
           sans: ["'Montserrat'"],
           mono: ["'Inconsolata'"]
-      }
+      },
   },
   plugins: [
       require('@tailwindcss/typography'),

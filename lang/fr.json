@@ -2,5 +2,23 @@
   "page.home.head.title": "Growth Shapers - Marketing Digital et Création de Contenu",
   "page.home.head.meta.description": "Growth Shapers - Marketing Digital et Création de Contenu",
   "page.home.title": "Bonjour Monde",
-  "page.home.description": "Vous consultez actuellement la page d'accueil en Français 🚀"
+  "page.home.description": "Vous consultez actuellement la page d'accueil en Français 🚀",
+  "site.menu": [
+    {
+      "id": 1,
+      "content": "Accueil"
+    },
+    {
+      "id": 2,
+      "content": "Nos Services"
+    },
+    {
+      "id": 3,
+      "content": "Réalisations"
+    },
+    {
+      "id": 4,
+      "content": "Nous engager"
+    }
+  ]
 }
