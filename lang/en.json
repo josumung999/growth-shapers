@@ -2,23 +2,5 @@
   "page.home.head.title": "Growth Shapers - Digital Marketing and Content Creation",
   "page.home.head.meta.description": "Growth Shapers - Digital Marketing and Content Creation",
   "page.home.title": "Hello World",
-  "page.home.description": "You are currently viewing the homepage in English 🚀",
-  "site.menu": [
-    {
-      "id": 1,
-      "content": "Home"
-    },
-    {
-      "id": 2,
-      "content": "Services"
-    },
-    {
-      "id": 3,
-      "content": "Portfolio"
-    },
-    {
-      "id": 4,
-      "content": "Work with Us"
-    }
-  ]
+  "page.home.description": "You are currently viewing the homepage in English 🚀"
 }
