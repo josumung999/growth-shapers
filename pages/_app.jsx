@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }) {
 
 
   return (
-    <ThemeProvider attribute='class'>
+    <ThemeProvider enableSystem={true} attribute='class'>
       <IntlProvider locale={locale} messages={messages[locale]}>
         <Component {...pageProps} dir={getDirection(locale)} />
       </IntlProvider>
