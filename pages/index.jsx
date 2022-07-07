@@ -1,14 +1,14 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { Fragment } from 'react';
-import { useIntl } from 'react-intl';
-import Hero from '../components/Hero';
 import { useRouter } from 'next/router';
+import { Fragment } from 'react';
+import { FormattedMessage, useIntl } from 'react-intl';
 
 import Navbar from '../components/Navbar'
 
 export default function Home({ dir }) {
-  const locales = useRouter();
+  const { locales } = useRouter();
+
   const intl = useIntl();
 
   const title = intl.formatMessage({ id: "page.home.head.title" });
@@ -21,7 +21,12 @@ export default function Home({ dir }) {
         <meta name="description" content={description} />
       </Head>
       <Navbar />
-      <Hero />
+      <h1 className="text-3xl font-bold underline">
+        <FormattedMessage id="page.home.title" />
+      </h1>
+      <p>
+        <FormattedMessage id="page.home.description" />
+      </p>
     </Fragment>
   )
 }
