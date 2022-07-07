@@ -1,9 +1,13 @@
 import React from 'react'
 import { useTheme } from 'next-themes';
+import { useIntl } from 'react-intl';
 
 const Navbar = () => {
 
   const {theme, setTheme} = useTheme();
+  const intl = useIntl();
+
+  const menuItems = intl.messages['page.menuItems'];
 
 
   return (
@@ -12,10 +16,11 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-16">
             <span className="text-2xl text-gray-900 font-semibold">Logo</span>
             <div className="flex space-x-4 text-gray-900">
-              <a href="#">Dashboard</a>
-              <a href="#">About</a>
-              <a href="#">Projects</a>
-              <a href="#">Contact</a>
+              {menuItems.map((item) => 
+                <a key={item.id} href={item.link}>
+                  {item.text}
+                </a>
+              )}
             </div>
             <div className="flex space-x-4 text-gray-900">
               <button
