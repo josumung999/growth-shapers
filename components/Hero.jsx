@@ -4,8 +4,8 @@ import { FormattedMessage } from 'react-intl';
 
 const Hero = () => {
   return (
-    <section className="h-full bg-gray-100 dark:bg-slate-900">
-      <div className="grid max-w-screen-xl px-4 lg:py-8 mx:auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+    <section className="absolute top-0 left-0 right-0 h-screen bg-white dark:bg-slate-900">
+      <div className="grid content-center max-w-screen-xl px-4 mx:auto lg:gap-8 xl:gap-0 lg:grid-cols-12">
         <div className='mr-auto mx-4 lg:mx-16 place-self-center lg:col-span-7'>
           <h1 className='font-bold text-slate-600 dark:text-slate-400 text-3xl my-4'>
             <FormattedMessage id="page.home.hero.title" />
