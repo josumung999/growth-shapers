@@ -1,8 +1,10 @@
 {
   "page.home.head.title": "Growth Shapers - Marketing Digital et Création de Contenu",
   "page.home.head.meta.description": "Growth Shapers - Marketing Digital et Création de Contenu",
-  "page.home.title": "Bonjour Monde",
-  "page.home.description": "Vous consultez actuellement la page d'accueil en Français 🚀",
+  "page.home.hero.title": "Les Outils et Stratégies pour votre",
+  "page.home.hero.description": "Croissance 🚀",
+  "page.home.hero.cta1": "Travailler avec nous",
+  "page.home.hero.cta2": "Nos Services",
   "page.menuItems": [
     {
       "id": "1",

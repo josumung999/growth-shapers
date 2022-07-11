@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Fragment } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
+import Hero from '../components/Hero';
 
 import Navbar from '../components/Navbar'
 
@@ -21,12 +22,9 @@ export default function Home({ dir }) {
         <meta name="description" content={description} />
       </Head>
       <Navbar />
-      <h1 className="text-3xl font-bold underline">
-        <FormattedMessage id="page.home.title" />
-      </h1>
-      <p>
-        <FormattedMessage id="page.home.description" />
-      </p>
+      <main className='relative'>
+        <Hero />
+      </main>
     </Fragment>
   )
 }
