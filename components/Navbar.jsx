@@ -15,7 +15,7 @@ const Navbar = () => {
       <nav className='sticky rounded top-0 z-50 bg-gray-200 backdrop-filter backdrop-blur-lg bg-opacity-30  border-b border-gray-200'>
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <span className="text-2xl text-gray-900 font-semibold">Logo</span>
+            <span className="text-2xl text-gray-900 font-semibold">Growth Shapers</span>
             <div className="hidden lg:flex space-x-4 text-gray-900">
               {menuItems.map((item) => 
                 <a key={item.id} className="text-gray-700 dark:text-gray-300" href={item.link}>
