@@ -12,7 +12,7 @@ const Navbar = () => {
 
   const menuItems = intl.messages['page.menuItems'];
   return (
-      <nav className='sticky rounded mx-4 lg:mx-16 z-50 bg-gray-200 backdrop-filter backdrop-blur-lg bg-opacity-30  border-b border-gray-200'>
+      <nav className='sticky rounded top-0 z-50 bg-gray-200 backdrop-filter backdrop-blur-lg bg-opacity-30  border-b border-gray-200'>
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <span className="text-2xl text-gray-900 font-semibold">Logo</span>

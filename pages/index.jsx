@@ -21,8 +21,8 @@ export default function Home({ dir }) {
         <title>{title}</title>
         <meta name="description" content={description} />
       </Head>
+      <Navbar />
       <main className='relative'>
-        <Navbar />
         <Hero />
       </main>
     </Fragment>
