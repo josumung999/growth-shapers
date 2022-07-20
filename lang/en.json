@@ -7,29 +7,25 @@
   "page.home.hero.cta2": "Our Services",
   "page.menuItems": [
     {
-      "id": "1",
-      "link": "/home",
-      "text": "Home"
-    },
-    {
       "id": "2",
-      "link": "/services",
-      "text": "Services"
+      "link": "/solutions",
+      "text": "Solutions"
     },
     {
       "id": "3",
-      "link": "/portfolio",
-      "text": "Portfolio"
+      "link": "/process",
+      "text": "Processes"
     },
     {
       "id": "4",
       "link": "/about",
-      "text": "About Us"
+      "text": "About"
     },
     {
       "id": "5",
-      "link": "/contact",
-      "text": "Contacts"
+      "link": "/resources",
+      "text": "Resources"
     }
-  ]
+  ],
+  "page.navbar.cta": "Work with Us"
 }

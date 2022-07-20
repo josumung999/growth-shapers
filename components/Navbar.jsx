@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useTheme } from 'next-themes';
-import { useIntl } from 'react-intl';
+import { useIntl, FormattedMessage } from 'react-intl';
 import Link from 'next/link';
 import { MoonIcon, SunIcon } from '@heroicons/react/outline';
 
@@ -15,7 +15,7 @@ const Navbar = () => {
       <nav className='sticky rounded top-0 z-50 bg-gray-200 backdrop-filter backdrop-blur-lg bg-opacity-30  border-b border-gray-200'>
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <span className="text-2xl text-gray-900 font-semibold">Growth Shapers</span>
+            <span className="text-2xl text-gray-900 dark:text-gray-200 font-black">Growth Shapers</span>
             <div className="hidden lg:flex space-x-4 text-gray-900">
               {menuItems.map((item) => 
                 <a key={item.id} className="text-gray-700 dark:text-gray-300" href={item.link}>
@@ -23,7 +23,16 @@ const Navbar = () => {
                 </a>
               )}
             </div>
-            <div className="hidden lg:flex space-x-4 text-gray-900">
+            <div className="hidden lg:flex items-center content-center space-x-4 text-gray-900">
+              <Link href="/contact" passHref>
+                  <button
+                    aria-label="Call to action"
+                    type="button"
+                    className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-teal-700 hover:bg-teal-800 focus:ring-4 focus:ring-teal-300 dark:focus:ring-teal-900"
+                  >
+                    <FormattedMessage id="page.navbar.cta" />
+                  </button>
+                </Link>
               <button
                 aria-label="Toggle Dark Mode"
                 type="button"
