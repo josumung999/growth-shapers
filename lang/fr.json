@@ -2,7 +2,7 @@
   "page.home.head.title": "Growth Shapers - Marketing Digital et Création de Contenu",
   "page.home.head.meta.description": "Growth Shapers - Marketing Digital et Création de Contenu",
   "page.home.hero.title": "Les Outils et Stratégies pour votre",
-  "page.home.hero.description": "Croissance 🚀",
+  "page.home.hero.description": "Croissance",
   "page.home.hero.cta1": "Travailler avec nous",
   "page.home.hero.cta2": "Nos Services",
   "page.menuItems": [
@@ -27,5 +27,7 @@
       "text": "Ressources"
     }
   ],
-  "page.navbar.cta": "Commencer"
+  "page.navbar.cta": "Commencer",
+  "page.home.mission.title": "Des solutions marketing adaptées à vos besoins",
+  "page.home.mission.description": "Growth Shapers est une agence internet offrant des services de qualité pour la croissance de vos entreprises. Que vous ayez besoin d'une campagne de marketing digital, de renforcer votre identité de marque ou de booster vos ventes, notre équipe est prête à vous accompagner dans le succès de votre business."
 }

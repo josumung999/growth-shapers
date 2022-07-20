@@ -7,10 +7,10 @@ const Hero = () => {
     <section className="h-screen lg:h-full bg-gray-100 dark:bg-slate-900">
       <div className="grid max-w-screen-xl content-center px-4 py-8 mx:auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div className='mr-auto mx-4 lg:mx-16 place-self-center lg:col-span-7'>
-          <h1 className='font-bold text-slate-600 dark:text-slate-400 text-xl lg:text-3xl my-4'>
+          <h2 className='font-bold text-slate-600 dark:text-slate-400 text-xl lg:text-3xl my-4'>
             <FormattedMessage id="page.home.hero.title" />
-          </h1>
-          <h1 className='font-black text-slate-900 dark:text-slate-300 text-5xl lg:text-7xl my-6'>
+          </h2>
+          <h1 className='font-black text-slate-900 dark:text-slate-300 text-5xl lg:text-8xl my-6'>
             <FormattedMessage id="page.home.hero.description" />
           </h1>
           <div className='my-8'>
