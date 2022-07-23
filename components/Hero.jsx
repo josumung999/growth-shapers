@@ -4,9 +4,9 @@ import { FormattedMessage } from 'react-intl';
 
 const Hero = () => {
   return (
-    <section className="z-20 relative bg-gray-100 dark:bg-slate-900">
-      <div className="pt-24 pb-32 px-4 flex justify-between items-center flex-col lg:flex-row">
-        <div className='flex flex-col items-center lg:block'>
+    <section className="h-screen lg:h-full bg-gray-100 dark:bg-slate-900">
+      <div className="grid max-w-screen-xl content-center px-4 py-8 mx:auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div className='mr-auto mx-4 lg:mx-16 place-self-center lg:col-span-7'>
           <h2 className='font-bold text-slate-600 dark:text-slate-400 text-xl lg:text-3xl my-4'>
             <FormattedMessage id="page.home.hero.title" />
           </h2>
@@ -24,7 +24,7 @@ const Hero = () => {
 
           </div>
         </div>
-        <div className="w-full sm:w-5/6 lg:w-1/2 mt-16 lg:mt-0 lg:pl-8">
+        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
             <Image src="/images/hero-light.png" alt='Hero Image' width="420" height="594" />
         </div>
       </div>
