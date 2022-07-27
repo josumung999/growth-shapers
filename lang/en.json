@@ -29,5 +29,10 @@
   ],
   "page.navbar.cta": "Work with Us",
   "page.home.mission.title": "Marketing solutions that fit your problems",
-  "page.home.mission.description": "At Growth Shapers, our mission is to scale your businesses by offering you quality content and marketing strategies. Whether you need a digital marketing campaign, strengthen your brand identity or boost your sales, our team is ready to support you in the success of your business."
+  "page.home.mission.description": "At Growth Shapers, our mission is to scale your businesses by offering you quality content and marketing strategies. Whether you need a digital marketing campaign, strengthen your brand identity or boost your sales, our team is ready to support you in the success of your business.",
+  "page.home.solutions.highlight": "Our Solutions",
+  "page.home.solutions.title": "Your needs, our expertise",
+  "page.home.solutions.para": "Our aim is to provide companies regardless their size, {br} the best tools and strategies for revenue growth",
+  "page.home.solutions.growth.title": "Growth",
+  "page.home.solutions.growth.desc": "Sales promotions, market penetration, social media management and digital marketing"
 }
