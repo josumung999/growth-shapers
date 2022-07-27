@@ -32,9 +32,11 @@
   "page.home.mission.description": "At Growth Shapers, our mission is to scale your businesses by offering you quality content and marketing strategies. Whether you need a digital marketing campaign, strengthen your brand identity or boost your sales, our team is ready to support you in the success of your business.",
   "page.home.solutions.highlight": "Our Solutions",
   "page.home.solutions.title": "Your needs, our expertise",
-  "page.home.solutions.para": "Our aim is to provide companies regardless their size, {br} the best tools and strategies for revenue growth",
+  "page.home.solutions.para": "Our aim is to provide companies regardless their size, the best tools and strategies for revenue growth",
   "page.home.solutions.growth.title": "Growth",
-  "page.home.solutions.growth.desc": "Sales promotions, market penetration,  {br}social media management and digital marketing",
+  "page.home.solutions.growth.desc": "Sales promotions, market penetration, social media management and digital marketing",
   "page.home.solutions.branding.title": "Branding",
-  "page.home.solutions.branding.desc": "Are you starting a new business ? {br} Growth Shapers will help you stand out by building, {br} promoting and scaling your brand identity."
+  "page.home.solutions.branding.desc": "Are you starting a new business ? Growth Shapers will help you stand out by building, promoting and scaling your brand identity.",
+  "page.home.solutions.design.title": "Design & Content",
+  "page.home.solutions.design.desc": "We offer you world class design services for Business Graphics (flyer, poster, business cards, etc.), Video Ad, Product and event photography"
 }

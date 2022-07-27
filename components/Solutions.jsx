@@ -67,9 +67,11 @@ const Solutions = () => {
               </svg>
             </div>
             <div id="cardContent">
-              <h3 className="text-2xl text-center font-bold text-teal-700 dark:text-slate-300 mb-4">Design</h3>
+              <h3 className="text-2xl text-center font-bold text-teal-700 dark:text-slate-300 mb-4">
+                <FormattedMessage id="page.home.solutions.design.title" />
+              </h3>
               <p className='text-sm text-center text-slate-500 dark:text-slate-200 font-normal'>
-              Launch Paid Media that drives MQLs fast. Run SEO programs that get real results. Create Email Marketing that engages future customers.
+                <FormattedMessage id="page.home.solutions.design.desc" values={{ br: <br /> }} />
               </p>
             </div>
           </div>

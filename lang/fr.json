@@ -32,9 +32,11 @@
   "page.home.mission.description": "Growth Shapers est une agence internet offrant des services de qualité pour la croissance de vos entreprises. Que vous ayez besoin d'une campagne de marketing digital, de renforcer votre identité de marque ou de booster vos ventes, notre équipe est prête à vous accompagner dans le succès de votre business.",
   "page.home.solutions.highlight": "Nos Solutions",
   "page.home.solutions.title": "Vos Besoins, notre expertise",
-  "page.home.solutions.para": "Nous fournissons aux entreprises peu importe leur tailles {br} des solutions gagnantes pour augmenter la visibilité ainsi que les revenus",
+  "page.home.solutions.para": "Nous fournissons aux entreprises peu importe leur tailles des solutions gagnantes pour augmenter la visibilité ainsi que les revenus",
   "page.home.solutions.growth.title": "Croissance",
-  "page.home.solutions.growth.desc": "Création et exécution de campagne de promotion{br} des produits et services, marketing digital et gestion de médias sociaux",
+  "page.home.solutions.growth.desc": "Création et exécution de campagne de promotion des produits et services, marketing digital et gestion de médias sociaux",
   "page.home.solutions.branding.title": "Branding",
-  "page.home.solutions.branding.desc": "Vous commencer un nouveau business ? Growth Shapers, vous offre des services illimités pour la création, la publicité et la promotion de votre marque "
+  "page.home.solutions.branding.desc": "Vous commencer un nouveau business ? Growth Shapers, vous offre des services illimités pour la création, la publicité et la promotion de votre marque",
+  "page.home.solutions.design.title": "Design & Contenu",
+  "page.home.solutions.design.desc": "Nous vous offrons un service de haute qualité pour les Graphiques d'entreprise (affiche, dépliant, flyer, etc), Vidéos publicitaires, photographie de produits et des évènements professionnels"
 }
