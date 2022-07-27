@@ -28,7 +28,7 @@ const Navbar = () => {
                   <button
                     aria-label="Call to action"
                     type="button"
-                    className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-teal-700 hover:bg-teal-800 focus:ring-4 focus:ring-teal-300 dark:focus:ring-teal-900"
+                    className="inline-flex items-center justify-center px-5 py-2 mr-3 text-base font-normal text-center text-white rounded-lg bg-teal-700 hover:bg-teal-800 focus:ring-4 focus:ring-teal-300 dark:focus:ring-teal-900"
                   >
                     <FormattedMessage id="page.navbar.cta" />
                   </button>

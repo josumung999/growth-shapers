@@ -4,7 +4,7 @@ import { FormattedMessage } from 'react-intl';
 
 const Hero = () => {
   return (
-    <section className="h-screen lg:h-full bg-gray-100 dark:bg-slate-900 -mt-16">
+    <section className="h-screen lg:h-full bg-slate-50 dark:bg-slate-900 -mt-16">
       <div className="grid max-w-screen-xl content-center px-4 py-8 mx:auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div className='mr-auto mx-4 lg:mx-16 place-self-center lg:col-span-7'>
           <h2 className='font-bold text-slate-600 dark:text-slate-400 text-xl lg:text-3xl my-4'>
