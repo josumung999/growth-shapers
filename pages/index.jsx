@@ -7,6 +7,7 @@ import Hero from '../components/Hero';
 import Mission from '../components/Mission';
 
 import Navbar from '../components/Navbar'
+import Solutions from '../components/Solutions';
 
 export default function Home({ dir }) {
   const { locales } = useRouter();
@@ -25,6 +26,7 @@ export default function Home({ dir }) {
       <Navbar />
         <Hero />
         <Mission />
+        <Solutions />
     </Fragment>
   )
 }
