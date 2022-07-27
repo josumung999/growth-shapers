@@ -16,7 +16,7 @@ const Solutions = () => {
             <FormattedMessage id="page.home.solutions.para" values={{br: <br/>}} />
           </p>
         </div>
-        <div className="grid gap-10 md:grid-cols-3 mt-10">
+        <div className="grid gap-10 lg:grid-cols-3 mt-10">
           <div id="card1" className="flex flex-col items-center justify-center">
             <div id="cardImage" className="bg-slate-800 text-slate-200 w-28 h-28 flex items-center justify-center rounded-2xl mb-10">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -28,7 +28,7 @@ const Solutions = () => {
                 <FormattedMessage id="page.home.solutions.growth.title" />
               </h3>
               <p className='text-sm text-center text-slate-500 dark:text-slate-200 font-normal'>
-              <FormattedMessage id="page.home.solutions.growth.desc" />
+              <FormattedMessage id="page.home.solutions.growth.desc" values={{br: <br/>}} />
               </p>
             </div>
           </div>
@@ -39,9 +39,11 @@ const Solutions = () => {
               </svg>
             </div>
             <div id="cardContent">
-              <h3 className="text-2xl text-center font-bold text-teal-700 dark:text-slate-300 mb-4">Branding</h3>
+              <h3 className="text-2xl text-center font-bold text-teal-700 dark:text-slate-300 mb-4">
+                <FormattedMessage id="page.home.solutions.branding.title" />
+              </h3>
               <p className='text-sm text-center text-slate-500 dark:text-slate-200 font-normal'>
-              Launch Paid Media that drives MQLs fast. Run SEO programs that get real results. Create Email Marketing that engages future customers.
+              <FormattedMessage id="page.home.solutions.branding.desc" values={{ br: <br /> }}/>
               </p>
             </div>
           </div>
