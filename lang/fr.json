@@ -38,5 +38,14 @@
   "page.home.solutions.branding.title": "Branding",
   "page.home.solutions.branding.desc": "Vous commencer un nouveau business ? Growth Shapers, vous offre des services illimités pour la création, la publicité et la promotion de votre marque",
   "page.home.solutions.design.title": "Design & Contenu",
-  "page.home.solutions.design.desc": "Nous vous offrons un service de haute qualité pour les Graphiques d'entreprise (affiche, dépliant, flyer, etc), Vidéos publicitaires, photographie de produits et des évènements professionnels"
+  "page.home.solutions.design.desc": "Nous vous offrons un service de haute qualité pour les Graphiques d'entreprise (affiche, dépliant, flyer, etc), Vidéos publicitaires, photographie de produits et des évènements professionnels",
+  "page.home.how.step1.title": "Plan",
+  "page.home.how.step1.desc": "Cette étape cruciale concerne l'étude des objectifs et l'élaboration de la stratégie adapée à vos besoins",
+  "page.home.how.step2.title": "Budget",
+  "page.home.how.step2.desc": "Nous procédons ensuite à l'élaboration d'une proposition technique et financière pour l'atteinte des objectifs",
+  "page.home.how.step3.title": "Start up",
+  "page.home.how.step3.desc": "Après s'en suit la mise en marche des différentes étapes du plan et le reporting des résultats atteints à chaque étape",
+  "page.home.how.step4.title": "Success",
+  "page.home.how.step4.desc": "Nous célébrons avec vous la mission accomplie et nous vous assistons dans la formation de votre équipe aux outils utilisés"
+
 }
