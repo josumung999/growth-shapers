@@ -13,11 +13,11 @@ const HowItWorks = () => {
         <div className="grid gap-10 lg:grid-cols-4 sm:grid-cols-2">
           <div>
             <div className="flex items-center justify-between mb-6">
-              <p className="text-2xl font-bold">
+              <p className="text-2xl font-bold text-slate-700 dark:text-slate-200">
                 <FormattedMessage id="page.home.how.step1.title" />
               </p>
               <svg
-                className="w-6 text-gray-700 transform rotate-90 sm:rotate-0"
+                className="w-6 text-teal-700 dark:text-teal-300 transform rotate-90 sm:rotate-0"
                 stroke="currentColor"
                 strokeWidth="2"
                 strokeLinecap="round"
@@ -39,17 +39,17 @@ const HowItWorks = () => {
                 />
               </svg>
             </div>
-            <p className="text-gray-600">
+            <p className="text-slate-600 dark:text-slate-400">
               <FormattedMessage id="page.home.how.step1.desc" />
             </p>
           </div>
           <div>
             <div className="flex items-center justify-between mb-6">
-              <p className="text-2xl font-bold">
+              <p className="text-2xl font-bold text-slate-700 dark:text-slate-200">
               <FormattedMessage id="page.home.how.step2.title" />
               </p>
               <svg
-                className="w-6 text-gray-700 transform rotate-90 sm:rotate-0"
+                className="w-6 text-teal-700 dark:text-teal-300 transform rotate-90 sm:rotate-0"
                 stroke="currentColor"
                 strokeWidth="2"
                 strokeLinecap="round"
@@ -71,17 +71,17 @@ const HowItWorks = () => {
                 />
               </svg>
             </div>
-            <p className="text-gray-600">
+            <p className="text-slate-600 dark:text-slate-400">
               <FormattedMessage id="page.home.how.step2.desc" />
             </p>
           </div>
           <div>
             <div className="flex items-center justify-between mb-6">
-              <p className="text-2xl font-bold">
+              <p className="text-2xl font-bold text-slate-700 dark:text-slate-200">
                 <FormattedMessage id="page.home.how.step3.title" />
               </p>
               <svg
-                className="w-6 text-gray-700 transform rotate-90 sm:rotate-0"
+                className="w-6 text-teal-700  dark:text-teal-300 transform rotate-90 sm:rotate-0"
                 stroke="currentColor"
                 strokeWidth="2"
                 strokeLinecap="round"
@@ -103,17 +103,17 @@ const HowItWorks = () => {
                 />
               </svg>
             </div>
-            <p className="text-gray-600">
+            <p className="text-slate-600 dark:text-slate-400">
               <FormattedMessage id="page.home.how.step3.desc" />
             </p>
           </div>
           <div>
             <div className="flex items-center justify-between mb-6">
-              <p className="text-2xl font-bold">
+              <p className="text-2xl font-bold text-slate-700 dark:text-slate-200">
                 <FormattedMessage id="page.home.how.step4.title" />
               </p>
               <svg
-                className="w-8 text-gray-600"
+                className="w-8 text-teal-600  dark:text-teal-300"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -127,7 +127,7 @@ const HowItWorks = () => {
                 />
               </svg>
             </div>
-            <p className="text-gray-600">
+            <p className="text-slate-600 dark:text-slate-400">
               <FormattedMessage id="page.home.how.step4.desc" />
             </p>
           </div>
