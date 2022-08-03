@@ -1,4 +1,5 @@
 import React from 'react'
+import { FormattedMessage } from 'react-intl'
 
 const Action = () => {
   return (
@@ -18,7 +19,7 @@ const Action = () => {
             <div className="flex flex-wrap items-center -mx-4">
                 <div className="w-full lg:w-1/2 px-4">
                   <span className="text-white text-base font-semibold mb-2">
-                  Find Your Next Dream App
+                    <FormattedMessage id="page.home.action.sub" />
                   </span>
                   <h2
                       className="
@@ -32,16 +33,16 @@ const Action = () => {
                       lg:mb-0
                       "
                       >
-                      Get started with <br className="hidden xs:block" />
-                      our free trial
+                      <FormattedMessage id="page.home.action.title" />
                   </h2>
                 </div>
                 <div className="w-full lg:w-1/2 px-4">
-                  <div className="flex flex-wrap lg:justify-end">
+                  <div className="flex flex-wrap justify-center lg:justify-end">
                       <a
                         href="javascript:void(0)"
                         className="
-                        inline-block
+                        hidden
+                        md:inline-block
                         py-4
                         px-6
                         md:px-9
@@ -52,13 +53,13 @@ const Action = () => {
                         font-medium
                         bg-white bg-opacity-[15%]
                         text-white
-                        hover:bg-opacity-100 hover:text-primary
+                        hover:bg-opacity-100 hover:text-teal-600
                         mr-4
                         my-1
                         transition
                         "
                         >
-                      Get Pro Version
+                          <FormattedMessage id="page.home.hero.cta2" />
                       </a>
                       <a
                         href="javascript:void(0)"
@@ -79,7 +80,7 @@ const Action = () => {
                         my-1
                         "
                         >
-                      Start Free Trial
+                          <FormattedMessage id="page.home.hero.cta1" />
                       </a>
                   </div>
                 </div>
