@@ -29,6 +29,7 @@ module.exports = {
             )}`;
           });
         });
-      })
+      }),
+      require("tailgrids/plugin")
   ],
 }
