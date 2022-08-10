@@ -15,9 +15,25 @@ const Hero = () => {
               <FormattedMessage id="page.home.hero.description" />
             </h1>
             <div className='my-8 text-center'>
-              <a href="#" className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white dark:text-teal-700 rounded-lg bg-teal-700 dark:bg-white hover:ring-4 hover:ring-teal-300 dark:hover:ring-teal-900">
+              <a href="#"
+                className="
+                  inline-block
+                  py-4
+                  px-6
+                  md:px-9
+                  lg:px-6
+                  xl:px-9
+                  rounded
+                  text-base
+                  font-medium
+                  bg-[#13C296]
+                  transition
+                  hover:bg-opacity-90
+                text-white
+                  my-1
+                "
+              >
                 <FormattedMessage id="page.home.hero.cta1" />
-                <svg className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
               </a>
             </div>
         </div>

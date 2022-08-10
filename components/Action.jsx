@@ -39,7 +39,7 @@ const Action = () => {
                 <div className="w-full lg:w-1/2 px-4">
                   <div className="flex flex-wrap justify-center lg:justify-end">
                       <a
-                        href="javascript:void(0)"
+                        href="#"
                         className="
                         hidden
                         md:inline-block
@@ -62,7 +62,7 @@ const Action = () => {
                           <FormattedMessage id="page.home.hero.cta2" />
                       </a>
                       <a
-                        href="javascript:void(0)"
+                        href="#"
                         className="
                         inline-block
                         py-4
@@ -74,6 +74,7 @@ const Action = () => {
                         text-base
                         font-medium
                         bg-[#13C296]
+                      dark:bg-slate-900
                         transition
                         hover:bg-opacity-90
                         text-white
