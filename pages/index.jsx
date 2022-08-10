@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import { Fragment } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 import Action from '../components/Action';
+import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import HowItWorks from '../components/HowItWorks';
 import Mission from '../components/Mission';
@@ -31,6 +32,7 @@ export default function Home({ dir }) {
         <Solutions />
         <HowItWorks />
         <Action />
+      <Footer />
     </Fragment>
   )
 }
