@@ -50,6 +50,9 @@
   "page.home.how.step4.desc": "Nous célébrons avec vous la mission accomplie et nous vous assistons dans la formation de votre équipe aux outils utilisés",
   "page.home.action.sub": "Adoptez nos solutions pour votre entreprise",
   "page.home.action.title": "Faites un pas vers la croissance",
-  "layout.footer.about": "Growth Shapers vous garantis tous les outils et services pour booster votre entreprise et développer votre impact dans votre secteur."
+  "layout.footer.about": "Growth Shapers vous garantis tous les outils et services pour booster votre entreprise et développer votre impact dans votre secteur.",
+  "layout.footer.menu1.title": "Entreprise",
+  "layout.footer.menu2.title": "Espace Client",
+  "layout.footer.social.title": "Suivez-Nous"
 
 }
