@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import { FormattedMessage, useIntl } from 'react-intl';
+import { RiFacebookFill, RiInstagramFill, RiLinkedinFill, RiTwitterFill } from 'react-icons/ri'
 
 const Footer = () => { 
   
@@ -9,7 +10,7 @@ const Footer = () => {
   const menuItems = intl.messages['page.menuItems'];
 
   return (
-    <div className="bg-teal-400 dark:bg-slate-800 relative overflow-hidden py-16 px-4 md:p-[70px] z-10">
+    <div className="bg-teal-300 dark:bg-slate-800 relative overflow-hidden py-16 px-4 md:p-[70px] z-10">
       <div className="container">
 
         <div className='grid lg:grid-cols-3 gap-4'>
@@ -58,9 +59,26 @@ const Footer = () => {
             </div>
           </div>
           <div className="mt-4">
-            <h3>
-              
+            <h3 className='text-xl font-semibold text-slate-700 dark:text-slate-300'>
+              <FormattedMessage id="layout.footer.social.title" />
             </h3>
+            <div className="inline-flex my-8">
+              <span className='w-8 h-8 border border-slate-300 dark:border-teal-600 text-slate-700 dark:text-teal-500 hover:bg-slate-700 hover:text-slate-100 dark:hover:bg-teal-600  dark:hover:text-slate-100 rounded-full flex justify-center items-center mr-3'>
+                <RiFacebookFill />
+              </span>
+              <span className='w-8 h-8 border border-slate-300 dark:border-teal-600 text-slate-700 dark:text-teal-500 hover:bg-slate-700 hover:text-slate-100 dark:hover:bg-teal-600  dark:hover:text-slate-100 rounded-full flex justify-center items-center mr-3'>
+                <RiInstagramFill />
+              </span>
+              <span className='w-8 h-8 border border-slate-300 dark:border-teal-600 text-slate-700 dark:text-teal-500 hover:bg-slate-700 hover:text-slate-100 dark:hover:bg-teal-600  dark:hover:text-slate-100 rounded-full flex justify-center items-center mr-3'>
+                <RiLinkedinFill />
+              </span>
+              <span className='w-8 h-8 border border-slate-300 dark:border-teal-600 text-slate-700 dark:text-teal-500 hover:bg-slate-700 hover:text-slate-100 dark:hover:bg-teal-600  dark:hover:text-slate-100 rounded-full flex justify-center items-center mr-3'>
+                <RiTwitterFill />
+              </span>
+            </div>
+            <p className='text-base font-medium text-slate-600 dark:text-slate-300'>
+              &copy; {new Date().getFullYear()} Growth Shapers
+            </p>
           </div>
         </div>
       </div>
