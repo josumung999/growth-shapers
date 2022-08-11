@@ -11,6 +11,7 @@ const Navbar = () => {
   const intl = useIntl();
 
   const menuItems = intl.messages['page.menuItems'];
+
   return (
       <nav className='sticky rounded top-0 z-50 bg-gray-200 backdrop-filter backdrop-blur-lg bg-opacity-30  shadow-md'>
         <div className="max-w-6xl mx-auto px-4">

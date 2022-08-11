@@ -1,13 +1,13 @@
 import { useRouter } from 'next/router';
 import { ThemeProvider } from 'next-themes';
 import { IntlProvider } from 'react-intl';
+import AOS from 'aos';
 
 import en from '../lang/en.json';
 import fr from '../lang/fr.json';
 
 import '../styles/globals.css';
-
-
+import { useEffect } from 'react';
 
 // Implementing locales
 const messages = {
@@ -28,6 +28,11 @@ function getDirection(locale) {
 function MyApp({ Component, pageProps }) {
   const { locale } = useRouter();
 
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
 
   return (
     <ThemeProvider enableSystem={true} attribute='class'>
