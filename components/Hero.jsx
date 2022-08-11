@@ -8,13 +8,13 @@ const Hero = () => {
       {/* Trying a new design for the hero section */}
       <section className="relative w-full top-0 left-0 -mt-16">
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <h2 className='font-semibold text-slate-700 dark:text-white text-sm lg:text-xl my-4 text-center'>
+            <h2 data-aos={"fade-up"}  className='font-semibold text-slate-700 dark:text-white text-sm lg:text-xl my-4 text-center'>
               <FormattedMessage id="page.home.hero.title" />
             </h2>
-            <h1 className='font-black text-slate-700 dark:text-white text-5xl lg:text-8xl my-6 text-center'>
+            <h1 data-aos={"fade-up"}  className='font-black text-slate-700 dark:text-white text-5xl lg:text-8xl my-6 text-center'>
               <FormattedMessage id="page.home.hero.description" />
             </h1>
-            <div className='my-8 text-center'>
+            <div data-aos={"fade-up"} className='my-8 text-center'>
               <a href="#"
                 className="
                   inline-block
