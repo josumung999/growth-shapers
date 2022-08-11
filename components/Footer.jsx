@@ -1,8 +1,13 @@
 import React from 'react'
 import Image from 'next/image';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, useIntl } from 'react-intl';
 
-const Footer = () => {
+const Footer = () => { 
+  
+  const intl = useIntl();
+
+  const menuItems = intl.messages['page.menuItems'];
+
   return (
     <div className="bg-teal-400 dark:bg-slate-800 relative overflow-hidden py-16 px-4 md:p-[70px] z-10">
       <div className="container">
@@ -10,9 +15,9 @@ const Footer = () => {
         <div className='grid lg:grid-cols-3 gap-4'>
           <div className="">
             <div className='mb-4'>
-              <Image alt="Growth Shapers Logo" className="" src="/images/logo.png" width="200" height="60" />
+              <Image alt="Growth Shapers Logo" className="" src="/images/logo.png" width="220" height="72" />
             </div>
-            <p className='text-sm mr-20 text-slate-700 dark:text-slate-300 mb-8'>
+            <p className='text-sm text-justify md:mr-16 text-slate-700 dark:text-slate-300 mb-8'>
               <FormattedMessage id="layout.footer.about" />
             </p>
             <h3 className='inline-flex text-slate-700 dark:text-slate-300 font-semibold text-lg'>
@@ -22,11 +27,40 @@ const Footer = () => {
               + 257 79 283 483
             </h3>
           </div>
-          <div className="bg-teal-400">
-            What&apos;s
+          <div className="flex flex-row mt-4">
+            <div className="basis-1/2">
+              <h3 className='text-lg font-semibold text-slate-700 dark:text-slate-300'>
+                <FormattedMessage id="layout.footer.menu1.title" />
+              </h3>
+              <ul className="list-none mt-4">
+                {menuItems.map((item) => 
+                <li key={item.id} className="my-2">
+                  <a className="text-gray-600 hover:text-xl text-lg  dark:text-gray-300" href={item.link}>
+                    {item.text}
+                  </a>
+                </li>
+                )}
+              </ul>
+            </div>
+            <div className="basis-1/2">
+              <h3 className='text-lg font-semibold text-slate-700 dark:text-slate-300'>
+                <FormattedMessage id="layout.footer.menu2.title" />
+              </h3>
+              <ul className="list-none mt-4">
+                {menuItems.map((item) => 
+                <li key={item.id} className="my-2">
+                  <a className="text-gray-600 hover:text-xl text-lg  dark:text-gray-300" href={item.link}>
+                    {item.text}
+                  </a>
+                </li>
+                )}
+              </ul>
+            </div>
           </div>
-          <div className="bg-slate-900">
-            Up to ?
+          <div className="mt-4">
+            <h3>
+              
+            </h3>
           </div>
         </div>
       </div>
