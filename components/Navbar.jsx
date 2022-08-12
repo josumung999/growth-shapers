@@ -18,10 +18,12 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-16">
             <span className="text-2xl text-gray-900 dark:text-gray-200 font-semibold lg:font-bold">Growth Shapers</span>
             <div className="hidden lg:flex space-x-4 text-gray-900">
-              {menuItems.map((item) => 
-                <a key={item.id} className="text-gray-700 text-base dark:text-gray-300" href={item.link}>
-                  {item.text}
-                </a>
+              {menuItems.map((item) =>
+                <Link key={item.id} href={item.link}>
+                  <a className="text-gray-700 text-base dark:text-gray-300">
+                    {item.text}
+                  </a>
+                </Link>
               )}
             </div>
             <div className="hidden lg:flex items-center content-center space-x-4 text-gray-900">
@@ -136,9 +138,12 @@ const Navbar = () => {
                       <ul className="space-y-4">
                         {menuItems.map((item) =>( 
                           <li key={item.id} >
-                            <a className='text-slate-800 dark:text-gray-200 text-xl mx-3' href={item.link}>
-                              {item.text}
-                            </a>
+
+                            <Link href={item.link}>
+                              <a className='text-slate-800 dark:text-gray-200 text-xl mx-3'>
+                                {item.text}
+                              </a>
+                            </Link>
                           </li>
                         ))}
                       </ul>
