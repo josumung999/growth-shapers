@@ -1,16 +1,17 @@
 import React, { Fragment } from 'react';
 import Link from 'next/link';
 import Head from "next/head";
+import { FormattedMessage } from 'react-intl';
 
 const UnderConstruction = () => {
   return (
     <Fragment>
       <Head>
-        <title>Page en cours de construction - Growth Shapers</title>
+        <title>Page under construction</title>
       </Head> 
       <div className='h-screen px-20 flex flex-col justify-center items-center bg-teal-500 dark:bg-slate-700'>
           <h1 className='text-4xl md:text-[70px] font-bold text-slate-100 text-center mb-8' style={{ lineHeight: 1.1 }}>
-            Page En cours de construction
+            <FormattedMessage id='layout.construction.title' />
           </h1>
           <Link href="/" passHref>
             <a
@@ -33,7 +34,7 @@ const UnderConstruction = () => {
               transition
               "
             >
-              Rentrer à l&apos;accueil              
+              <FormattedMessage id="layout.construction.cta" />              
             </a>
           </Link>
       </div>

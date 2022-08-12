@@ -53,6 +53,8 @@
   "layout.footer.about": "Growth Shapers vous garantis tous les outils et services pour booster votre entreprise et développer votre impact dans votre secteur.",
   "layout.footer.menu1.title": "Entreprise",
   "layout.footer.menu2.title": "Espace Client",
-  "layout.footer.social.title": "Suivez-Nous"
+  "layout.footer.social.title": "Suivez-Nous",
+  "layout.construction.title": "Page en cours de construction",
+  "layout.construction.cta": "Rentrer à l'accueil"
 
 }

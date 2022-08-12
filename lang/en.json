@@ -53,5 +53,7 @@
   "layout.footer.about": "Growth Shapers offfers you all the services and tools you need to scale your business and create a real impact in your niche.",  
   "layout.footer.menu1.title": "Company",
   "layout.footer.menu2.title": "Customer Space",
-  "layout.footer.social.title": "Follow Us On"
+  "layout.footer.social.title": "Follow Us On",
+  "layout.construction.title": "Page under construction",
+  "layout.construction.cta": "Back to home"
 }
