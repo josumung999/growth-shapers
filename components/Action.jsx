@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import { FormattedMessage } from 'react-intl'
 
@@ -38,8 +39,8 @@ const Action = () => {
                 </div>
                 <div data-aos={"fade-left"} className="w-full lg:w-1/2 px-4">
                   <div className="flex flex-wrap justify-center lg:justify-end">
+                    <Link href="/solutions" passHref>
                       <a
-                        href="#"
                         className="
                         hidden
                         md:inline-block
@@ -61,8 +62,9 @@ const Action = () => {
                         >
                           <FormattedMessage id="page.home.hero.cta2" />
                       </a>
+                    </Link>
+                    <Link passHref href="/contact">
                       <a
-                        href="#"
                         className="
                         inline-block
                         py-4
@@ -83,6 +85,7 @@ const Action = () => {
                         >
                           <FormattedMessage id="page.home.hero.cta1" />
                       </a>
+                    </Link>
                   </div>
                 </div>
             </div>
