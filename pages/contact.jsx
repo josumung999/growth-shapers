@@ -1,9 +1,18 @@
 import React from 'react'
+import { useIntl } from 'react-intl';
+import Layout from '../components/Layout';
 
-const contact = () => {
+const Contact = () => {
+  const intl = useIntl();
+
+  const title = intl.formatMessage({ id: "page.contact.head.title" });
+  const description = intl.formatMessage({ id: "page.contact.head.meta.description" });
+
   return (
-    <div>contact</div>
+    <Layout title={title} description={description}>
+      Contact us
+    </Layout>
   )
 }
 
-export default contact
+export default Contact

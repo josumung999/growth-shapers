@@ -55,6 +55,8 @@
   "layout.footer.menu2.title": "Espace Client",
   "layout.footer.social.title": "Suivez-Nous",
   "layout.construction.title": "Page en cours de construction",
-  "layout.construction.cta": "Rentrer à l'accueil"
+  "layout.construction.cta": "Rentrer à l'accueil",
+  "page.contact.head.title": "Travailler avec nous",
+  "page.contact.head.meta.description": "Faites un pas vers la croissance en nous confiant le succès de votre business"
 
 }
