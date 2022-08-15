@@ -7,6 +7,7 @@ import Action from '../components/Action';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import HowItWorks from '../components/HowItWorks';
+import Layout from '../components/Layout';
 import Mission from '../components/Mission';
 
 import Navbar from '../components/Navbar'
@@ -21,18 +22,12 @@ export default function Home({ dir }) {
   const description = intl.formatMessage({ id: "page.home.head.meta.description" });
 
   return (
-    <Fragment>
-      <Head>
-        <title>{title}</title>
-        <meta name="description" content={description} />
-      </Head>
-      <Navbar />
-        <Hero />
-        <Mission />
-        <Solutions />
-        <HowItWorks />
-        <Action />
-      <Footer />
-    </Fragment>
+    <Layout title={title} description={description}>
+      <Hero />
+      <Mission />
+      <Solutions />
+      <HowItWorks />
+      <Action />
+    </Layout>
   )
 }
