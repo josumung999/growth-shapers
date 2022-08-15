@@ -11,6 +11,7 @@
   "dependencies": {
     "@heroicons/react": "^1.0.6",
     "aos": "^2.3.4",
+    "contentful": "^9.1.34",
     "next": "12.1.6",
     "next-themes": "^0.2.0",
     "react": "18.1.0",
