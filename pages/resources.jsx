@@ -11,24 +11,25 @@ const Solutions = (props) => {
   return (
     <>
       <UnderConstruction />
+      <h1>
+        {props.title}
+      </h1>
     </>
   )
 }
 
 export default Solutions
 
-export function getStaticProps() {
-  client.getEntry('6hPjOxlhJFsYZJGk6lbH54').then(function (entry) {
-    // logs the entry metadata
-    console.log(entry.sys);
-  
-    // logs the field with ID title
-    console.log(entry.fields.title);
-  });
+export async function getStaticProps() {
+  const post = await client.getEntry('6hPjOxlhJFsYZJGk6lbH54');
+
+
 
   return {
     props: {
-
+      title: post.fields.title,
+      body: post.fields.body,
+      heroImage: post.fields.heroImage
     }
   }
 }
