@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { RiFacebookFill, RiInstagramFill, RiLinkedinFill, RiTwitterFill } from 'react-icons/ri'
 import { useTheme } from 'next-themes';
+import Link from 'next/link';
 
 const Footer = () => { 
   
@@ -44,9 +45,11 @@ const Footer = () => {
               <ul className="list-none mt-4">
                 {menuItems.map((item) => 
                 <li key={item.id} className="my-2">
-                  <a className="text-gray-600 hover:text-xl text-lg  dark:text-gray-300" href={item.link}>
-                    {item.text}
-                  </a>
+                  <Link  href={item.link} passHref>
+                    <a className="text-gray-600 hover:text-xl text-lg  dark:text-gray-300">
+                      {item.text}
+                    </a>
+                  </Link>
                 </li>
                 )}
               </ul>
@@ -58,9 +61,11 @@ const Footer = () => {
               <ul className="list-none mt-4">
                 {menuItems.map((item) => 
                 <li key={item.id} className="my-2">
-                  <a className="text-gray-600 hover:text-xl text-lg  dark:text-gray-300" href={item.link}>
-                    {item.text}
-                  </a>
+                  <Link  href={item.link} passHref>
+                    <a className="text-gray-600 hover:text-xl text-lg  dark:text-gray-300">
+                      {item.text}
+                    </a>
+                  </Link>
                 </li>
                 )}
               </ul>
