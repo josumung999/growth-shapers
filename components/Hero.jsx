@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { Fragment } from 'react'
 import { FormattedMessage } from 'react-intl';
 
@@ -15,26 +16,28 @@ const Hero = () => {
               <FormattedMessage id="page.home.hero.description" />
             </h1>
             <div data-aos={"fade-up"} className='my-8 text-center'>
-              <a href="#"
-                className="
-                  inline-block
-                  py-4
-                  px-6
-                  md:px-9
-                  lg:px-6
-                  xl:px-9
-                  rounded
-                  text-base
-                  font-medium
-                  bg-[#13C296]
-                  transition
-                  hover:bg-opacity-90
-                text-white
-                  my-1
-                "
-              >
-                <FormattedMessage id="page.home.hero.cta1" />
-              </a>
+              <Link href='/contact' passHref>
+                <a
+                  className="
+                    inline-block
+                    py-4
+                    px-6
+                    md:px-9
+                    lg:px-6
+                    xl:px-9
+                    rounded
+                    text-base
+                    font-medium
+                    bg-[#13C296]
+                    transition
+                    hover:bg-opacity-90
+                  text-white
+                    my-1
+                  "
+                >
+                  <FormattedMessage id="page.home.hero.cta1" />
+                </a>
+              </Link>
             </div>
         </div>
         <div className="grid grid-cols-2 -z-50">
