@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "populate:contentful": "contentful space migration --space-id xgm1ky8p6xht --management-token TW6wAfnLggsoSyJTsCvx_m-lxhsj0XoE_DFARKgLDm0 utils/contentful.js --yes"
+    "lint": "next lint"
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
@@ -23,8 +22,6 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.2",
     "autoprefixer": "^10.4.7",
-    "contentful-cli": "^1.14.29",
-    "contentful-migration": "^4.9.4",
     "eslint": "8.17.0",
     "eslint-config-next": "12.1.6",
     "postcss": "^8.4.14",
