@@ -2,12 +2,15 @@ import React from 'react'
 import Image from 'next/image';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { RiFacebookFill, RiInstagramFill, RiLinkedinFill, RiTwitterFill } from 'react-icons/ri'
+import { useTheme } from 'next-themes';
 
 const Footer = () => { 
   
   const intl = useIntl();
 
   const menuItems = intl.messages['page.menuItems'];
+
+  const {theme, setTheme} = useTheme();
 
   return (
     <div className="bg-teal-300 dark:bg-slate-800 relative overflow-hidden py-16 px-4 md:p-[70px] z-10">
@@ -16,7 +19,12 @@ const Footer = () => {
         <div className='grid lg:grid-cols-3 gap-4'>
           <div className="">
             <div className='mb-4'>
-              <Image alt="Growth Shapers Logo" className="" src="/images/logo.png" width="220" height="72" />
+              {theme === 'light' ? (
+                <Image alt="Growth Shapers Logo" className="" src="/images/logo.png" width="220" height="72" />
+
+              ): (
+                <Image alt="Growth Shapers Logo" className="" src="/images/logo-dark.png" width="220" height="72" />
+              )}
             </div>
             <p className='text-sm text-justify md:mr-16 text-slate-700 dark:text-slate-300 mb-8'>
               <FormattedMessage id="layout.footer.about" />
