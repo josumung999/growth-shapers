@@ -3,6 +3,7 @@ import { useTheme } from 'next-themes';
 import { useIntl, FormattedMessage } from 'react-intl';
 import Link from 'next/link';
 import { MoonIcon, SunIcon } from '@heroicons/react/outline';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,6 +12,17 @@ const Navbar = () => {
   const intl = useIntl();
 
   const menuItems = intl.messages['page.menuItems'];
+
+  // TODO: Implement language switcher in Navbar
+  const router = useRouter()
+  
+  const handleLocaleChange = (event) => {
+    const value = event.target.value;
+
+    router.push(router.route, router.asPath, {
+      locale: value,
+    })
+  }
 
   return (
       <nav className='sticky rounded top-0 z-50 bg-gray-200 backdrop-filter backdrop-blur-lg bg-opacity-30  shadow-md'>
@@ -51,7 +63,7 @@ const Navbar = () => {
                   >
                     <FormattedMessage id="page.navbar.cta" />
                   </button>
-                </Link>
+              </Link>
               <button
                 aria-label="Toggle Dark Mode"
                 type="button"
@@ -64,6 +76,14 @@ const Navbar = () => {
                   <SunIcon className="text-gray-400 w-5 h-5" />
                 )}
               </button>
+              <select id="locales" onChange={handleLocaleChange} className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block inline-block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500' value={router.locale}>
+                <option value="fr">
+                  Français
+                </option>
+                <option value="en">
+                  English
+                </option>
+              </select>
             </div>
             <div className="lg:hidden">
               <div className="flex items-center justify-center">
@@ -173,6 +193,16 @@ const Navbar = () => {
                               <FormattedMessage id="page.navbar.cta" />
                             </button>
                           </Link>
+                        </li>
+                        <li>
+                          <select id="locales" onChange={handleLocaleChange} className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block inline-block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full' value={router.locale}>
+                            <option value="fr">
+                              Français
+                            </option>
+                            <option value="en">
+                              English
+                            </option>
+                          </select>
                         </li>
                       </ul>
                     </nav>
