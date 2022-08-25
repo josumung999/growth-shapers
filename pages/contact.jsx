@@ -44,8 +44,24 @@ const Contact = () => {
                         <textarea type="text" className="h-40 text-base leading-none dark:text-gray-50 text-gray-700 p-3 focus:outline-none mt-4 border border-gray-300 focus:border-teal-500 dark:border-0 bg-white dark:bg-gray-800 rounded"></textarea>
                     </div>
                 </div>
-                <div className="flex items-center justify-center w-full">
-                    <button className="mt-9 font-semibold leading-none text-white py-4 px-10 bg-blue-700 rounded hover:bg-blue-600 focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 focus:outline-none">
+                <div className="flex w-full">
+                    <button className="
+                        inline-block
+                        py-4
+                        px-6
+                        md:px-9
+                        lg:px-6
+                        xl:px-9
+                        rounded
+                        text-base
+                        font-medium
+                        bg-[#13C296]
+                      dark:bg-teal-700
+                        transition
+                        hover:bg-opacity-90
+                        text-white
+                        my-12
+                        ">
                         Send message
                     </button>
                 </div>
