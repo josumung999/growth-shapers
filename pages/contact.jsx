@@ -1,9 +1,29 @@
 import React from 'react'
+import { useState } from 'react';
 import { useIntl, FormattedMessage } from 'react-intl';
 import Layout from '../components/Layout';
 
 const Contact = () => {
   const intl = useIntl();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: ""
+  });
+
+  const { name, email, phone, subject, message } = formData;
+
+  const onChange = e => setFormData({
+    ...formData,
+    [e.target.name]: e.target.value
+  });
+
+  const onSubmit = e => {
+    e.preventDefault();
+    
+  }
 
   const title = intl.formatMessage({ id: "page.contact.head.title" });
   const description = intl.formatMessage({ id: "page.contact.head.meta.description" });
@@ -16,13 +36,19 @@ const Contact = () => {
             <h2 className='text-2xl font-semibold'>
               <FormattedMessage id="page.contact.form.title" />
             </h2>
-            <form action="" method="post">
+            <form onSubmit={e => onSubmit(e)}>
                 <div className="md:flex items-center mt-12">
-                    <div className="w-full flex flex-col">
+                      <div className="w-full flex flex-col">
                         <label className="font-semibold leading-none text-gray-800 dark:text-gray-300">
                           <FormattedMessage id="page.contact.form.label.name" />
                         </label>
-                        <input type="text" className="leading-none dark:text-gray-50 text-gray-700 p-3 focus:outline-none mt-4 border border-gray-300 focus:border-teal-500 dark:border-0 bg-white dark:bg-gray-800 rounded"/>
+                        <input 
+                          type="text" 
+                          className="leading-none dark:text-gray-50 text-gray-700 p-3 focus:outline-none mt-4 border border-gray-300 focus:border-teal-500 dark:border-0 bg-white dark:bg-gray-800 rounded"
+                          name="name" 
+          	              value={name}
+          	              onChange={e => onChange(e)}
+                        />
                     </div>     
                 </div>
                 <div className="md:flex items-center mt-8">
@@ -30,13 +56,25 @@ const Contact = () => {
                         <label className="font-semibold leading-none text-gray-800 dark:text-gray-300">
                         <FormattedMessage id="page.contact.form.label.email" />
                         </label>
-                        <input type="text" className="leading-none dark:text-gray-50 text-gray-700 p-3 focus:outline-none mt-4 border border-gray-300 focus:border-teal-500 dark:border-0 bg-white dark:bg-gray-800 rounded" />
+                        <input 
+                          type="text" 
+                          className="leading-none dark:text-gray-50 text-gray-700 p-3 focus:outline-none mt-4 border border-gray-300 focus:border-teal-500 dark:border-0 bg-white dark:bg-gray-800 rounded" 
+                          name="email" 
+          	              value={email}
+          	              onChange={e => onChange(e)}
+                        />
                     </div>
                     <div className="w-full md:w-1/2 flex flex-col md:ml-6 md:mt-0 mt-4">
                         <label className="font-semibold leading-none text-gray-800 dark:text-gray-300">
                           <FormattedMessage id="page.contact.form.label.phone" />
                         </label>
-                        <input type="email" className="leading-none dark:text-gray-50 text-gray-700 p-3 focus:outline-none mt-4 border border-gray-300 focus:border-teal-500 dark:border-0 bg-white dark:bg-gray-800 rounded"/>
+                        <input 
+                          type="tel" 
+                          className="leading-none dark:text-gray-50 text-gray-700 p-3 focus:outline-none mt-4 border border-gray-300 focus:border-teal-500 dark:border-0 bg-white dark:bg-gray-800 rounded"
+                          name="phone" 
+          	              value={phone}
+          	              onChange={e => onChange(e)}
+                        />
                     </div>
                 </div>
                 <div className="md:flex items-center mt-8">
@@ -44,7 +82,13 @@ const Contact = () => {
                         <label className="font-semibold leading-none text-gray-800 dark:text-gray-300">
                           <FormattedMessage id="page.contact.form.label.subject" />
                         </label>
-                        <input type="text" className="leading-none dark:text-gray-50 text-gray-700 p-3 focus:outline-none mt-4 border border-gray-300 focus:border-teal-500 dark:border-0 bg-white dark:bg-gray-800 rounded"/>
+                        <input 
+                          type="text" 
+                          className="leading-none dark:text-gray-50 text-gray-700 p-3 focus:outline-none mt-4 border border-gray-300 focus:border-teal-500 dark:border-0 bg-white dark:bg-gray-800 rounded"
+                          name="subject" 
+          	              value={subject}
+          	              onChange={e => onChange(e)}
+                        />
                     </div>
                 </div>
                 
@@ -53,7 +97,13 @@ const Contact = () => {
                         <label className="font-semibold leading-none text-gray-800 dark:text-gray-300">
                           <FormattedMessage id="page.contact.form.label.message" />
                         </label>
-                        <textarea type="text" className="h-40 text-base leading-none dark:text-gray-50 text-gray-700 p-3 focus:outline-none mt-4 border border-gray-300 focus:border-teal-500 dark:border-0 bg-white dark:bg-gray-800 rounded"></textarea>
+                        <textarea 
+                          type="text" 
+                          className="h-40 text-base leading-none dark:text-gray-50 text-gray-700 p-3 focus:outline-none mt-4 border border-gray-300 focus:border-teal-500 dark:border-0 bg-white dark:bg-gray-800 rounded"
+                          name="message" 
+          	              value={message}
+          	              onChange={e => onChange(e)}
+                        ></textarea>
                     </div>
                 </div>
                 <div className="flex w-full">
