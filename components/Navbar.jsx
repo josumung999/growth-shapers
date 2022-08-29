@@ -25,7 +25,7 @@ const Navbar = () => {
   }
 
   return (
-      <nav className='sticky rounded top-0 z-50 bg-gray-200 backdrop-filter backdrop-blur-lg bg-opacity-30  shadow-md'>
+      <nav className='sticky rounded top-0 z-50 bg-gray-200 dark:bg-gray-900 backdrop-filter backdrop-blur-lg bg-opacity-30 dark:bg-opacity-40  shadow-md'>
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <span className="text-2xl text-gray-900 dark:text-gray-200 font-semibold lg:font-bold">Growth Shapers</span>
