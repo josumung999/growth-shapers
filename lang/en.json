@@ -63,5 +63,6 @@
   "page.contact.form.label.email": "Email",
   "page.contact.form.label.phone": "Phone",
   "page.contact.form.label.subject": "Subjet",
-  "page.contact.form.label.message": "Message"
+  "page.contact.form.label.message": "Message",
+  "page.contact.form.button.submit": "Send message"
 }
