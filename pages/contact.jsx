@@ -22,7 +22,7 @@ const Contact = () => {
 
   const onSubmit = e => {
     e.preventDefault();
-    
+    console.log(formData);
   }
 
   const title = intl.formatMessage({ id: "page.contact.head.title" });
