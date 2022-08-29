@@ -22,7 +22,24 @@ const Contact = () => {
 
   const onSubmit = e => {
     e.preventDefault();
-    console.log(formData);
+    console.log("Sending");
+
+    let data = {
+      name,
+      email,
+      phone,
+      subject,
+      message
+    }
+
+    fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data)
+    })
   }
 
   const title = intl.formatMessage({ id: "page.contact.head.title" });
