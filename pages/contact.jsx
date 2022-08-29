@@ -12,6 +12,7 @@ const Contact = () => {
     subject: "",
     message: ""
   });
+  const [submitted, setSubmitted] = useState(false)
 
   const { name, email, phone, subject, message } = formData;
 
@@ -39,6 +40,20 @@ const Contact = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data)
+    }).then((res) => {
+      console.log('Message Received');
+      if (res.status === 200) {
+        console.log("Response Succeeded");
+        setSubmitted(true);
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: ""
+        });
+      }
+      
     })
   }
 
