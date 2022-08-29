@@ -57,6 +57,11 @@
   "layout.construction.title": "Page en cours de construction",
   "layout.construction.cta": "Rentrer à l'accueil",
   "page.contact.head.title": "Travailler avec nous",
-  "page.contact.head.meta.description": "Faites un pas vers la croissance en nous confiant le succès de votre business"
-
+  "page.contact.head.meta.description": "Faites un pas vers la croissance en nous confiant le succès de votre business",
+  "page.contact.form.title": "Travaillons ensemble",
+  "page.contact.form.label.name": "Nom complet",
+  "page.contact.form.label.email": "Email",
+  "page.contact.form.label.phone": "Téléphone",
+  "page.contact.form.label.subject": "Sujet",
+  "page.contact.form.label.message": "Votre Message"
 }

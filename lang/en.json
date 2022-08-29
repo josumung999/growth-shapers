@@ -57,5 +57,11 @@
   "layout.construction.title": "Page under construction",
   "layout.construction.cta": "Back to home",
   "page.contact.head.title": "Work with Us",
-  "page.contact.head.meta.description": "Take a step forward by entrusting us the growth of your business"
+  "page.contact.head.meta.description": "Take a step forward by entrusting us the growth of your business",
+  "page.contact.form.title": "Let's Work together",
+  "page.contact.form.label.name": "Name",
+  "page.contact.form.label.email": "Email",
+  "page.contact.form.label.phone": "Phone",
+  "page.contact.form.label.subject": "Subjet",
+  "page.contact.form.label.message": "Message"
 }
