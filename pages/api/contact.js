@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer';
 
 const sendMail = (req, res) => {
   const transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
+    host: mail.growthshapers.com,
     port: process.env.SMTP_PORT,
     auth: {
       user: process.env.TEST_EMAIL,
