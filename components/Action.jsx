@@ -18,7 +18,7 @@ const Action = () => {
             "
             >
             <div className="flex flex-wrap items-center -mx-4">
-                <div data-aos={"fade-right"} className="w-full lg:w-1/2 px-4">
+                <div className="w-full lg:w-1/2 px-4">
                   <span className="text-white text-base font-semibold mb-2">
                     <FormattedMessage id="page.home.action.sub" />
                   </span>
@@ -37,7 +37,7 @@ const Action = () => {
                       <FormattedMessage id="page.home.action.title" />
                   </h2>
                 </div>
-                <div data-aos={"fade-left"} className="w-full lg:w-1/2 px-4">
+                <div className="w-full lg:w-1/2 px-4">
                   <div className="flex flex-wrap justify-center lg:justify-end">
                     <Link href="/solutions" passHref>
                       <a
