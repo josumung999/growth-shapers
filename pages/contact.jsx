@@ -20,10 +20,26 @@ const Contact = () => {
     [e.target.name]: e.target.value
   });
 
-  const onSubmit = e => {
+  const onSubmit = async (e) => {
     e.preventDefault();
-    console.log("Sending");
+
+    let isValidForm = handleValidation();
+
+    const res = await fetch("/api/contact", {
+      body: JSON.stringify(formData),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+    });
+
+    const { error } = await res.json();
+      if (error) {
+        console.log(error);
+        return;
+      }
     console.log(formData);
+    
     setFormData({
       name: "",
       email: "",
