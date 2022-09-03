@@ -4,7 +4,7 @@ import { FormattedMessage } from 'react-intl'
 const Solutions = () => {
   return (
     <div className='bg-slate-50 dark:bg-slate-900 '>
-      <div data-aos={"flip-up"} data-aos-duration={2000} className='px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-16 lg:py-20'>
+      <div className='px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-16 lg:py-20'>
         <div className="flex items-center justify-center flex-col">
           <h3 className="text-base text-center font-semibold text-teal-700 dark:text-teal-600">
             <FormattedMessage id="page.home.solutions.highlight" />
