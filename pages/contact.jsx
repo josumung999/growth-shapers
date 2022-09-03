@@ -148,7 +148,10 @@ const Contact = () => {
                         hover:bg-opacity-90
                         text-white
                         my-12
-                        ">
+                      "
+                      disabled
+                      title="We are still working on the contact form"
+                    >
                         <FormattedMessage id="page.contact.form.button.submit" />
                     </button>
                 </div>

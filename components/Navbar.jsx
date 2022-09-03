@@ -28,7 +28,9 @@ const Navbar = () => {
       <nav className='sticky rounded top-0 z-50 bg-gray-200 dark:bg-gray-900 backdrop-filter backdrop-blur-lg bg-opacity-30 dark:bg-opacity-40  shadow-md'>
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <span className="text-2xl text-gray-900 dark:text-gray-200 font-semibold lg:font-bold">Growth Shapers</span>
+            <Link href="/" passHref>
+              <a className="text-2xl text-gray-900 dark:text-gray-200 font-semibold lg:font-bold">Growth Shapers</a>
+            </Link>
             <div className="hidden lg:flex space-x-4 text-gray-900">
               {menuItems.map((item) =>
                 <Link key={item.id} href={item.link}>
@@ -54,7 +56,7 @@ const Navbar = () => {
                       text-base
                       font-medium
                       bg-[#13C296]
-                      dark:bg-slate-600
+                      dark:bg-slate-900
                       transition
                       hover:bg-opacity-90
                     text-white
@@ -126,7 +128,7 @@ const Navbar = () => {
                   <div className="p-5 bg-slate-200 dark:bg-slate-700 dark:border-none border rounded shadow-sm">
                     <div className="flex items-center justify-between mb-4">
                       <div>
-                        <Link href="/">
+                        <Link href="/" passHref>
                           <a
                             aria-label="Growth Shapers"
                             title="Growth Shapers"
@@ -183,7 +185,7 @@ const Navbar = () => {
                                 text-base
                                 font-medium
                                 bg-[#13C296]
-                                dark:bg-slate-600
+                                dark:bg-slate-900
                                 transition
                                 hover:bg-opacity-90
                               text-white
