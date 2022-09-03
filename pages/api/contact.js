@@ -1,22 +1,15 @@
-
 import nodemailer from 'nodemailer';
 
+
 const sendMail = async (req, res) => {
-  await NextCors(req, res, {
-    // Options
-    methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
-    origin: '*',
-    optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
-  })
-
-
   const transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
+    host: "mail.growthshapers.com",
     port: process.env.SMTP_PORT,
     auth: {
       user: process.env.TEST_EMAIL,
       pass: process.env.TEST_PASS
-    }
+    },
+    secure: true
   });
 
   const mailData = {
@@ -27,10 +20,14 @@ const sendMail = async (req, res) => {
     html: `<h3>${req.body.subject}</h3><p><b>Message Content: </b>${req.body.message}</p><p>Sender: ${req.body.name} <br> Email: ${req.body.email} <br> Phone number: ${req.body.phone} </p>`
    };
 
-  const mail = await transporter.sendMail(mailData);
+  transporter.sendMail(mailData, function (err, info) {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(info);
+    }
+   })
 
-  return mail;
-  console.log(mail)
    res.status(200).send(
     'Message sent successfully, thanks for contacting US'
    );
