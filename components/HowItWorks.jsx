@@ -4,7 +4,7 @@ import { FormattedMessage } from 'react-intl';
 const HowItWorks = () => {
   return (
     <div className="bg-white dark:bg-slate-700">
-      <div data-aos={"fade-up-right"} data-aos-duration={1000} className='px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-16 lg:py-20'>
+      <div className='px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-16 lg:py-20'>
         <div className='max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-20'>
           <h1 className="text-2xl lg:text-4xl font-semibold text-center text-slate-700 dark:text-slate-300">
             <FormattedMessage id="page.home.how.title" />
