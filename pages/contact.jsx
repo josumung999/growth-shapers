@@ -24,6 +24,15 @@ const Contact = () => {
   const onSubmit = e => {
     e.preventDefault();
     console.log("Sending");
+    console.log(formData);
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: ""
+    })
+
   }
 
   const title = intl.formatMessage({ id: "page.contact.head.title" });
