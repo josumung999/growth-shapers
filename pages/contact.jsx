@@ -23,7 +23,7 @@ const Contact = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
 
-    let isValidForm = handleValidation();
+    // let isValidForm = handleValidation();
 
     const res = await fetch("/api/contact", {
       body: JSON.stringify(formData),
