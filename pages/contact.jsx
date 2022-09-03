@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState } from 'react';
 import { useIntl, FormattedMessage } from 'react-intl';
 import Layout from '../components/Layout';
@@ -28,7 +27,7 @@ const Contact = () => {
     setFormData({
       name: "",
       email: "",
-      phone: "",
+      phone: "", 
       subject: "",
       message: ""
     })
