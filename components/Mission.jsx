@@ -8,7 +8,7 @@ const Mission = () => {
     <div className='bg-white dark:bg-slate-700'>
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-16 lg:py-20">
       <div className="grid gap-10 lg:grid-cols-2">
-        <div data-aos={"fade-right"} className="lg:pr-10">
+        <div className="lg:pr-10">
           <h5 className="mb-4 text-4xl text-gray-700 dark:text-gray-300 font-extrabold leading-none ease-in duration-300">
             <FormattedMessage id="page.home.mission.title" />
           </h5>
@@ -25,7 +25,7 @@ const Mission = () => {
             </Link>
           </div>
         </div>
-        <div data-aos={"fade-left"} className='flex align-center justify-center'>
+        <div className='flex align-center justify-center'>
           <Image src="/images/target.png" alt="" width="400" height="400" />
         </div>
       </div>
