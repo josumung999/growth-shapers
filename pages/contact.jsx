@@ -24,37 +24,6 @@ const Contact = () => {
   const onSubmit = e => {
     e.preventDefault();
     console.log("Sending");
-
-    let data = {
-      name,
-      email,
-      phone,
-      subject,
-      message
-    }
-
-    fetch('/api/contact', {
-      method: 'POST',
-      headers: {
-        "Accept": "application/json, text/plain, */*",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data)
-    }).then((res) => {
-      console.log('Message Received');
-      if (res.status === 200) {
-        console.log("Response Succeeded");
-        setSubmitted(true);
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          subject: "",
-          message: ""
-        });
-      }
-      
-    })
   }
 
   const title = intl.formatMessage({ id: "page.contact.head.title" });
