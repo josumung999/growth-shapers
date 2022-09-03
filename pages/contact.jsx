@@ -56,8 +56,8 @@ const Contact = () => {
   return (
     <Layout title={title} description={description}>
       <div className='-mt-20 bg-white dark:bg-slate-900'>
-        <div className="flex flex-row px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-16 lg:px-10 lg:py-20">
-          <div className="basis-3/5 h-full lg:py-28">
+        <div className="flex flex-col md:flex-row px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-16 lg:px-10 lg:py-20">
+          <div className="md:basis-3/5 h-full py-16 lg:py-28">
             <h2 className='text-2xl font-semibold'>
               <FormattedMessage id="page.contact.form.title" />
             </h2>
@@ -154,7 +154,7 @@ const Contact = () => {
                 </div>
             </form>
           </div>
-          <div className="basis-2/5 lg:py-28">
+          <div className="md:basis-2/5 lg:py-28">
             <div className="flex items-center justify-center">
               <p className='mt-24 text-xl font-semibold'>
                 hello@growthshapers.com
