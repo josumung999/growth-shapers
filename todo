@@ -1,0 +1,44 @@
+1. About Page
+  1.1. Present the Company
+  1.2. The mission
+  1.3. The history
+  1.4. The Team
+  1.5. Vision Overview
+  1.6. Offices
+
+2. Services Page
+  2.1. Fetch all Services from Contentful (Title, Short Description, Image [weither icon or illustration])
+  2.2. Fetch A unique Service from ContentFul
+    2.2.1. Display Service Informations,
+    2.2.2. Display Service Details
+    2.2.3. Display package and pricing options
+    2.2.4. A call to action to book the service
+
+3. Contact Page
+  3.1. Fix the contact form submission
+  3.2. Add a list to select service by names
+
+4. Process Page
+  4.1. Explain our process and how we work (cfr Digital Reach Agency)
+  4.2. Create a page containing collapsible block similar to FAQ
+
+5. Resources Page
+  5.1. Fetch blog posts from Contentful
+  5.2. Display A unique Blog Post with features such as Comment, Share, etc
+
+6. Done with It
+
+
+Work plan
+
+Work on a weekly basis.
+
+One week for each feature
+
+I Have 5 weeks to fix this.
+
+Week 1: Contact Page
+Week 2: Services Page
+Week 3: About Page
+Week 4: Process Page
+Week 5: Resources Page
