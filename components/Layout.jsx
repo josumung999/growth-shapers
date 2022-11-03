@@ -2,8 +2,13 @@ import React from 'react'
 import Head from 'next/head'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import Action from './Action'
+import { useRouter } from 'next/router'
 
 const Layout = ({title, description, children}) => {
+  const router = useRouter();
+
+  console.log(router.pathname)
   return (
     <div>
       <Head>
@@ -16,6 +21,7 @@ const Layout = ({title, description, children}) => {
       <main>
         {children}
       </main>
+      {router.pathname !== '/contact' ? <Action /> : null }
       <Footer />
     </div>
   )

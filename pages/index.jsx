@@ -19,7 +19,6 @@ export default function Home({ dir }) {
       <Mission />
       <Solutions />
       <HowItWorks />
-      <Action />
     </Layout>
   )
 }
