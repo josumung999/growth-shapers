@@ -66,5 +66,8 @@
   "page.contact.form.label.message": "Message",
   "page.contact.form.button.submit": "Send message",
   "page.about.head.title": "About Us",
-  "page.about.head.description": "Learn more about who we are, our history, our vision and mission"
+  "page.about.head.description": "Learn more about who we are, our history, our vision and mission",
+  "page.about.header.relativeText": "We",
+  "page.about.header.title": "believe in transparency, communication, quality, and service.",
+  "page.about.header.subtitle": "Your partner since 2020"
 }

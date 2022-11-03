@@ -1,6 +1,7 @@
 import Link from "next/link";
+import { FormattedMessage } from "react-intl";
 
-export const Header = () => {
+export const Header = ({ headerRelative, headerTitle, headerSub }) => {
   return (
     <div className="bg-teal-100 dark:bg-teal-700 -mt-16">
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -31,10 +32,15 @@ export const Header = () => {
                       height="24"
                     />
                   </svg>
-                  <span className="relative">The</span>
+                  <span className="relative">
+                    {headerRelative}
+                  </span>
                 </span>{' '}
-                quick, brown fox jumps over a lazy dog
+                {headerTitle}
               </h2>
+              <p className="font-semibold text-teal-600 dark:text-slate-300 md:text-xl uppercase">
+                {headerSub}
+              </p>
             </div>
           </div>
         </div>

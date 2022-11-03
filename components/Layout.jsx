@@ -6,7 +6,7 @@ import Action from './Action'
 import { useRouter } from 'next/router'
 import { Header } from './Header'
 
-const Layout = ({title, description, children}) => {
+const Layout = ({title, description, headerRelative, headerTitle, headerSub, children}) => {
   const router = useRouter();
 
   console.log(router.pathname)
@@ -19,7 +19,7 @@ const Layout = ({title, description, children}) => {
         </title>
       </Head>
       <Navbar />
-      {router.pathname !== '/' && router.pathname !== '/contact' ? <Header /> : null }
+      {router.pathname !== '/' && router.pathname !== '/contact' ? <Header headerRelative={headerRelative} headerTitle={headerTitle} headerSub={headerSub} /> : null }
       <main>
         {children}
       </main>

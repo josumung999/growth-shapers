@@ -66,5 +66,8 @@
   "page.contact.form.label.message": "Votre Message",
   "page.contact.form.button.submit": "Envoyer message",
   "page.about.head.title": "A Propos de nous",
-  "page.about.head.description": "A Propos de Growth Shapers, notre histoire, notre vision et nos missions."
+  "page.about.head.description": "A Propos de Growth Shapers, notre histoire, notre vision et nos missions.",
+  "page.about.header.relativeText": "Transparence,",
+  "page.about.header.title": "communication, qualité et service",
+  "page.about.header.subtitle": "Votre partenaire depuis 2020"
 }
