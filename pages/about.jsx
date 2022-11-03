@@ -1,5 +1,6 @@
 import React from 'react'
 import { useIntl } from 'react-intl'
+import Intro from '../components/about/Intro';
 import Layout from '../components/Layout';
 
 const About = () => {
@@ -18,7 +19,7 @@ const About = () => {
       headerTitle={headerTitle} 
       headerSub={headerSub}
     >
-      A propos
+      <Intro />
     </Layout>
   )
 }
