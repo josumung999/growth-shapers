@@ -1,7 +1,4 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { FormattedMessage, useIntl } from 'react-intl';
+import { useIntl } from 'react-intl';
 import Action from '../components/Action';
 import Hero from '../components/Hero';
 import HowItWorks from '../components/HowItWorks';
@@ -10,7 +7,6 @@ import Mission from '../components/Mission';
 import Solutions from '../components/Solutions';
 
 export default function Home({ dir }) {
-  const { locales } = useRouter();
 
   const intl = useIntl();
 
