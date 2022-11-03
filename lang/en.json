@@ -71,5 +71,26 @@
   "page.about.header.title": "believe in transparency, communication, quality, and service.",
   "page.about.header.subtitle": "Your partner since 2020",
   "page.about.intro.title": "A digital marketing agency you can rely on.",
-  "page.about.intro.subtitle": "Since our founding, we’ve believed that relationships are more important than dollars. We pride ourselves on going the extra mile, finding room for partnership, and supporting our clients through thick and thin. As we grow, those values continue to drive us."
+  "page.about.intro.subtitle": "Since our founding, we’ve believed that relationships are more important than dollars. We pride ourselves on going the extra mile, finding room for partnership, and supporting our clients through thick and thin. As we grow, those values continue to drive us.",
+  "page.about.value.title": "Growth Shapers is:",
+  "page.about.values": [
+    {
+      "id": "2",
+      "title": "Transparent",
+      "icon": "FaSearchengin",
+      "description": "Always know your strategy. Track every dollar. We’re dedicated to radical openness."
+    },
+    {
+      "id": "3",
+      "title": "Passionate",
+      "icon": "FaHeartbeat",
+      "description": "Our strategists are the best in the business. Get next-level performance."
+    },
+    {
+      "id": "4",
+      "title": "Collaborative",
+      "icon": "BsFillChatLeftTextFill",
+      "description": "We believe in developing partner relationships. Isn’t it better to trust your digital agency?"
+    }
+  ]
 }

@@ -47,19 +47,6 @@ const Solutions = () => {
               </p>
             </div>
           </div>
-          {/* <div id="card3" className="flex flex-col items-center justify-center">
-            <div id="cardImage" className="bg-slate-800 text-slate-200 w-28 h-28 flex items-center justify-center rounded-2xl mb-10">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
-            </div>
-            <div id="cardContent">
-              <h3 className="text-2xl text-center font-bold text-teal-700 dark:text-slate-300 mb-4">Infrastructure</h3>
-              <p className='text-sm text-center text-slate-500 dark:text-slate-200 font-normal'>
-              Launch Paid Media that drives MQLs fast. Run SEO programs that get real results. Create Email Marketing that engages future customers.
-              </p>
-            </div>
-          </div> */}
           <div id="card4" className="flex flex-col items-center justify-center">
             <div id="cardImage" className="bg-slate-800 text-slate-200 w-28 h-28 flex items-center justify-center rounded-2xl mb-10">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

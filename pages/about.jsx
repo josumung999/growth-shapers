@@ -1,6 +1,7 @@
 import React from 'react'
 import { useIntl } from 'react-intl'
 import Intro from '../components/about/Intro';
+import Values from '../components/about/Values';
 import Layout from '../components/Layout';
 
 const About = () => {
@@ -20,6 +21,7 @@ const About = () => {
       headerSub={headerSub}
     >
       <Intro />
+      <Values />
     </Layout>
   )
 }
