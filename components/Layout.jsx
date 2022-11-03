@@ -4,6 +4,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import Action from './Action'
 import { useRouter } from 'next/router'
+import { Header } from './Header'
 
 const Layout = ({title, description, children}) => {
   const router = useRouter();
@@ -18,6 +19,7 @@ const Layout = ({title, description, children}) => {
         </title>
       </Head>
       <Navbar />
+      {router.pathname !== '/' && router.pathname !== '/contact' ? <Header /> : null }
       <main>
         {children}
       </main>
