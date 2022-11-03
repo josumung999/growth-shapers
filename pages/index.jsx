@@ -1,12 +1,11 @@
 import { useIntl } from 'react-intl';
-import Action from '../components/Action';
 import Hero from '../components/Hero';
 import HowItWorks from '../components/HowItWorks';
 import Layout from '../components/Layout';
 import Mission from '../components/Mission';
 import Solutions from '../components/Solutions';
 
-export default function Home({ dir }) {
+export default function Home() {
 
   const intl = useIntl();
 

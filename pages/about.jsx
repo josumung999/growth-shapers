@@ -1,12 +1,18 @@
 import React from 'react'
+import { useIntl } from 'react-intl'
+import Layout from '../components/Layout';
 import UnderConstruction from '../components/UnderConstruction'
 
-const solutions = () => {
+const About = () => {
+  const intl = useIntl();
+
+  const title = intl.formatMessage({ id: "page.about.head.title" });
+  const description = intl.formatMessage({ id: "page.about.head.description" });
   return (
-    <>
-      <UnderConstruction />
-    </>
+    <Layout title={title} description={description}>
+      A propos
+    </Layout>
   )
 }
 
-export default solutions
+export default About

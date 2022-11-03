@@ -64,5 +64,7 @@
   "page.contact.form.label.phone": "Téléphone",
   "page.contact.form.label.subject": "Sujet",
   "page.contact.form.label.message": "Votre Message",
-  "page.contact.form.button.submit": "Envoyer message"
+  "page.contact.form.button.submit": "Envoyer message",
+  "page.about.head.title": "A Propos de nous",
+  "page.about.head.description": "A Propos de Growth Shapers, notre histoire, notre vision et nos missions."
 }

@@ -64,5 +64,7 @@
   "page.contact.form.label.phone": "Phone",
   "page.contact.form.label.subject": "Subjet",
   "page.contact.form.label.message": "Message",
-  "page.contact.form.button.submit": "Send message"
+  "page.contact.form.button.submit": "Send message",
+  "page.about.head.title": "About Us",
+  "page.about.head.description": "Learn more about who we are, our history, our vision and mission"
 }
