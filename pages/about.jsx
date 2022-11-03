@@ -1,7 +1,6 @@
 import React from 'react'
 import { useIntl } from 'react-intl'
 import Layout from '../components/Layout';
-import UnderConstruction from '../components/UnderConstruction'
 
 const About = () => {
   const intl = useIntl();
