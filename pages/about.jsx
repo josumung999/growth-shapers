@@ -1,6 +1,7 @@
 import React from 'react'
 import { useIntl } from 'react-intl'
 import Intro from '../components/about/Intro';
+import Team from '../components/about/Team';
 import Values from '../components/about/Values';
 import Layout from '../components/Layout';
 
@@ -22,6 +23,7 @@ const About = () => {
     >
       <Intro />
       <Values />
+      <Team />
     </Layout>
   )
 }
