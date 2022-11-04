@@ -92,5 +92,11 @@
       "icon": "BsFillChatLeftTextFill",
       "description": "We believe in developing partner relationships. Isn’t it better to trust your digital agency?"
     }
-  ]
+  ],
+  "page.about.team.legent": "From left to right: Noé Kiriza, Josué Munganga and Oddon Matyabo in Bujumbura",
+  "page.about.team.prefix": "About",
+  "page.about.team.sufix": "us",
+  "page.about.team.about": "After finishing university studies, and in order to contribute to the development of the country. The 3 young men had the idea of creating a digital agency that could work remotely. In order to provide quality services to companies anywhere in the world and over time the company grows. We were recently joined by Samuel Basemage, another college colleague.",
+  "page.about.team.cta1": "Our ",
+  "page.about.team.cta2": "community"
 }

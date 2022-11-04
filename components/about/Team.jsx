@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FormattedMessage } from "react-intl";
 
 const Team = () => {
   return (
@@ -14,23 +15,25 @@ const Team = () => {
               className="object-cover w-full rounded shadow-lg"
             />
           </div>
-          <legend className="text-xs font-light mt-1 italic">De Gauche à droite: Noé Kiriza, Josué Munganga et Oddon Matyabo à Bujumbura</legend>
+          <legend className="text-xs font-light mt-1 italic">
+            <FormattedMessage id="page.about.team.legent" />
+          </legend>
         </div>
         <div className="lg:pr-10">
           <h5 className="mb-4 text-4xl text-slate-700 font-extrabold leading-none uppercase">
-            About{" "}
+            <FormattedMessage id="page.about.team.prefix" />{" "}
             <span className="inline-block text-teal-400">
-              Us
+              <FormattedMessage id="page.about.team.sufix" />
             </span>
           </h5>
           <p className="mb-6 text-gray-900">
-            Après avoir fini les études universitaires, et dans le soucis de contribuer au développement du pays. Les 3 jeunes hommes eurent l&apos;idée de créer une agence digitale qui pourrait fonctionner en distanciel. Dans le but de fournir de services de qualités aux entreprises de n&apos;importe où dans le monde et avec le temps la société grandit. Nous avons été recemment réjoint par Samuel Basemage, un autre collègue d&apos;université.
+            <FormattedMessage id="page.about.team.about" />
           </p>
           <hr className="mb-5 border-gray-300" />
           <h5 className="mb-4 text-4xl text-slate-700 font-extrabold leading-none">
-            Suivez-
+            <FormattedMessage id="page.about.team.cta1" />
             <span className="inline-block text-teal-400">
-              Nous
+              <FormattedMessage id="page.about.team.cta2" />
             </span>
           </h5>
           <div className="flex items-center space-x-4">

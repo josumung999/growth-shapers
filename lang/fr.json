@@ -92,5 +92,11 @@
       "icon": "BsFillChatLeftTextFill",
       "description": "Nous croyons au développement de relations de partenariat. Ne vaut-il pas mieux faire confiance à votre agence digitale ?"
     }
-  ]
+  ],
+  "page.about.team.legent": "De Gauche à droite: Noé Kiriza, Josué Munganga et Oddon Matyabo à Bujumbura",
+  "page.about.team.prefix": "A Propos",
+  "page.about.team.sufix": "de nous",
+  "page.about.team.about": "Après avoir fini les études universitaires, et dans le soucis de contribuer au développement du pays. Les 3 jeunes hommes eurent l'idée de créer une agence digitale qui pourrait fonctionner en distanciel. Dans le but de fournir de services de qualités aux entreprises de n'importe où dans le monde et avec le temps la société grandit. Nous avons été recemment réjoint par Samuel Basemage, un autre collègue d'université.",
+  "page.about.team.cta1": "Suivez-",
+  "page.about.team.cta2": "nous"
 }
