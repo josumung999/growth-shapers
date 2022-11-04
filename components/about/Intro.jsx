@@ -7,7 +7,7 @@ const Intro = () => {
       {/* mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl */}
       <div className='px-4 py-16 md:px-24 lg:px-16 lg:py-20'>
         {/* max-w-xl lg:max-w-2xl  */}
-        <div className='sm:text-center md:mx-auto mb-10 md:mb-20'>
+        <div className='sm:text-center md:mx-auto md:my-10'>
           <h1 className="text-2xl lg:text-4xl font-semibold text-center text-slate-700 dark:text-slate-300">
             <FormattedMessage id="page.about.intro.title" />
           </h1>
